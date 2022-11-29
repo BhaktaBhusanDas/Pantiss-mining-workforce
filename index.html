@@ -5,129 +5,199 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,700,1,200" />
   <title>Pantiss mining workforce</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header class="FLEX">
-    <span><a href="#"><img alt="IMAGE" src="img\logo.png"></a></span>
+  <header>
     <nav>
-      <ul class="FLEX">
-        <li><a href="#index.html">Home</a></li>
+      <a class="logo" href="#"><img alt="IMAGE" src="images/logo.png"></a>
+      <ul class="navUl">
+        <li><a class="active" href="#index.html">Home</a></li>
         <li><a href="#">Who we are</a></li>
-        <li><a href="#"> What we do</a></li>
-        <li><a href="#"> Mining empowerment fellowship</a></li>
+        <li><a href="#">What we do</a></li>
+        <li><a href="#">Mining empowerment</a></li>
         <li><a href="#">Our publications</a></li>
         <li><a href="#">Career</a></li>
       </ul>
     </nav>
   </header>
-  <section>
-    <h2>OUR WORKS(what we do)</h2>
-    <hr>
-    <div class="FLEX">
-      <a href="#" class="card" id="card-1"><img alt="IMAGE" src="img/logo.png">
-        <h4><b>Social Devlopment Atound Mining</b></h4>
-      </a>
-      <a href="#" class="card" id="card-2"><img alt="IMAGE" src="img/logo.png">
-        <h4><b>Social Enterprises</b></h4>
-      </a>
-      <a href="#" class="card" id="card-3"><img alt="IMAGE" src="img/logo.png">
-        <h4><b>MINEx SIM</b></h4>
-      </a>
-      <a href="#" class="card" id="card-4"><img alt="IMAGE" src="img/logo.png">
-        <h4><b>Happiness Professionals</b></h4>
-      </a>
-    </div>
-  </section>
-  <section>
-    <h2>OUR PROJECTS</h2>
-    <hr>
-    <div class="FLEX">
-      <div class="card">
-        <h4><b>Lorem, ipsum.</b></h4>
-        <hr>
-        <p>Lorem ipsum dolor sit amet.</p>
+  <main>
+    <section class="slider">
+      <div class="buttonContainer">
+        <span id="left" class="material-symbols-rounded">
+          arrow_back
+        </span>
+        <span id="right" class="material-symbols-rounded">
+          arrow_forward
+        </span>
       </div>
-      <div class="card">
-        <h4><b>Lorem, ipsum.</b></h4>
-        <hr>
-        <p>Lorem ipsum dolor sit amet.</p>
+      <div class="slideContainer">
+        <div class="slide image1"></div>
+        <div class="slide image2"></div>
+        <div class="slide image3"></div>
+        <div class="slide image4"></div>
+        <div class="slide image5"></div>
+        <div class="slide image6"></div>
       </div>
-      <div class="card">
-        <h4><b>Lorem, ipsum.</b></h4>
-        <hr>
-        <p>Lorem ipsum dolor sit amet.</p>
+    </section>
+    <section class="ourWork">
+      <h2>OUR WORKS</h2>
+      <div class="FLEX cardContainer">
+        <div class="card">
+          <div class="cardImageContainer card1">
+            <h3>SOCIAL DEVELOPMENT</h3>
+          </div>
+        </div>
+        <div class="card">
+          <div class="cardImageContainer card2">
+            <h3>SOCIAL ENTERPRISES</h3>
+          </div>
+        </div>
+        <div class="card">
+          <div class="cardImageContainer card3">
+            <h3>PANTISS MINEX SIM</h3>
+          </div>
+        </div>
+        <div class="card">
+          <div class="cardImageContainer card4">
+            <h3>PANTISS HAPPINESS PROFESSIONALS</h3>
+          </div>
+        </div>
+        <!--         <a href="#" class="card" id="card-1"><img alt="IMAGE" src="images/logo.png">
+          <h4><b>Social Devlopment Atound Mining</b></h4>
+        </a>
+        <a href="#" class="card" id="card-2"><img alt="IMAGE" src="images/logo.png">
+          <h4><b>Social Enterprises</b></h4>
+        </a>
+        <a href="#" class="card" id="card-3"><img alt="IMAGE" src="images/logo.png">
+          <h4><b>MINEx SIM</b></h4>
+        </a>
+        <a href="#" class="card" id="card-4"><img alt="IMAGE" src="images/logo.png">
+          <h4><b>Happiness Professionals</b></h4> -->
+        </a>
       </div>
-      <div class="card">
-        <h4><b>Lorem, ipsum.</b></h4>
-        <hr>
-        <p>Lorem ipsum dolor sit amet.</p>
+    </section>
+    <section class="ourProjects">
+      <h2>OUR PROJECTS</h2>
+      <div class="projectCardContainer">
+        <div class="card projectCard">
+          <div class="hContainer">
+            <h4>Lorem ipsum</h4>
+          </div>
+          <div class="pContainer">
+            <p>Lorem ipsum dolor sit</p>
+          </div>
+        </div>
+        <div class="card projectCard">
+          <div class="hContainer">
+            <h4>dolor sit</h4>
+          </div>
+          <div class="pContainer">
+            <p>mollitia dignissimos quo blanditiis</p>
+          </div>
+        </div>
+        <div class="card projectCard">
+          <div class="hContainer">
+            <h4>adipisicing elit Dolor</h4>
+          </div>
+          <div class="pContainer">
+            <p>enim doloremque odit sunt</p>
+          </div>
+        </div>
+        <div class="card projectCard">
+          <div class="hContainer">
+            <h4>amet consectetur</h4>
+          </div>
+          <div class="pContainer">
+            <p>atque ad quidem doloribus</p>
+          </div>
+        </div>
+        <div class="card projectCard">
+          <div class="hContainer">
+            <h4>omnis voluptatibus quae</h4>
+          </div>
+          <div class="pContainer">
+            <p>cupiditate est aspernatur Doloribus</p>
+          </div>
+        </div>
+        <div class="card projectCard">
+          <div class="hContainer">
+            <h4>adipisicing elit</h4>
+          </div>
+          <div class="pContainer">
+            <p>deleniti deserunt reprehenderit eum</p>
+          </div>
+        </div>
+        <div class="card projectCard">
+          <div class="hContainer">
+            <h4>In necessitatibus</h4>
+          </div>
+          <div class="pContainer">
+            <p>sapiente modi explicabo animi</p>
+          </div>
+        </div>
+        <div class="card projectCard">
+          <div class="hContainer">
+            <h4>nesciunt omnis</h4>
+          </div>
+          <div class="pContainer">
+            <p>voluptates iusto accusantium quas</p>
+          </div>
+        </div>
+        <div class="card projectCard">
+          <div class="hContainer">
+            <h4>vitae placeat</h4>
+          </div>
+          <div class="pContainer">
+            <p>explicabo ea nostrum enim</p>
+          </div>
+        </div>
+        <div class="card projectCard">
+          <div class="hContainer">
+            <h4>vero cupiditate</h4>
+          </div>
+          <div class="pContainer">
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="card projectCard">
+          <div class="hContainer">
+            <h4>excepturi Culpa</h4>
+          </div>
+          <div class="pContainer">
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="card projectCard">
+          <div class="hContainer">
+            <h4>beatae quo</h4>
+          </div>
+          <div class="pContainer">
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="FLEX">
-      <div class="card">
-        <h4><b>Lorem, ipsum.</b></h4>
-        <hr>
-        <p>Lorem ipsum dolor sit amet.</p>
-      </div>
-      <div class="card">
-        <h4><b>Lorem, ipsum.</b></h4>
-        <hr>
-        <p>Lorem ipsum dolor sit amet.</p>
-      </div>
-      <div class="card">
-        <h4><b>Lorem, ipsum.</b></h4>
-        <hr>
-        <p>Lorem ipsum dolor sit amet.</p>
-      </div>
-      <div class="card">
-        <h4><b>Lorem, ipsum.</b></h4>
-        <hr>
-        <p>Lorem ipsum dolor sit amet.</p>
-      </div>
-    </div>
-    <div class="FLEX">
-      <div class="card">
-        <h4><b>Lorem, ipsum.</b></h4>
-        <hr>
-        <p>Lorem ipsum dolor sit amet.</p>
-      </div>
-      <div class="card">
-        <h4><b>Lorem, ipsum.</b></h4>
-        <hr>
-        <p>Lorem ipsum dolor sit amet.</p>
-      </div>
-      <div class="card">
-        <h4><b>Lorem, ipsum.</b></h4>
-        <hr>
-        <p>Lorem ipsum dolor sit amet.</p>
-      </div>
-      <div class="card">
-        <h4><b>Lorem, ipsum.</b></h4>
-        <hr>
-        <p>Lorem ipsum dolor sit amet.</p>
-      </div>
-    </div>
-  </section>
+    </section>
+    <h1 class="to">To be continued</h1>
+  </main>
 
   <SECTION class="BG">
     <h2>OUR REACH</h2>
-    <hr>
-    <div><img src="img/map.jpg" alt="MAP"></div>
+    <div><img src="images/map.jpg" alt="MAP"></div>
   </SECTION>
   <section>
     <div class="FLEX">
       <h3>OUR TRANNING CENTER</h3>
       <div class="card">
         <h4><b>Lorem.</b></h4>
-        <hr>
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
       <div class="card">
         <h4><b>Lorem.</b></h4>
-        <hr>
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
     </div>
@@ -135,19 +205,16 @@
       <h3>OUR DIGITAL LEARNING</h3>
       <div class="card">
         <h4><b>Lorem.</b></h4>
-        <hr>
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
     </DIV>
   </section>
   <section class="BG">
     <h2>OUR HIGLIGHTS</h2>
-    <hr>
     <DIV class="FLEX">
       <DIV>
         <div class="card">
           <h4><b> Success stories</b></h4>
-          <hr>
           <p>Lorem ipsum dolor sit amet.</p>
         </div>
         <div><button><a href="#Success stories">VIEW MORE</a></button></div>
@@ -155,7 +222,6 @@
       <DIV>
         <div class="card">
           <h4><b> Our blogs</b></h4>
-          <hr>
           <p>Lorem ipsum dolor sit amet.</p>
         </div>
         <div><button><a href="#Success stories">VIEW MORE</a></button></div>
@@ -163,7 +229,6 @@
       <DIV>
         <div class="card">
           <h4><b> Media and awards</b></h4>
-          <hr>
           <p>Lorem ipsum dolor sit amet.</p>
         </div>
         <div><button><a href="#Success stories">VIEW MORE</a></button></div>
@@ -171,7 +236,6 @@
       <DIV>
         <div class="card">
           <h4><b> Our publications</b></h4>
-          <hr>
           <p>Lorem ipsum dolor sit amet.</p>
         </div>
         <div><button><a href="#Success stories">VIEW MORE</a></button></div>
@@ -180,56 +244,47 @@
   </section>
   <SECTION>
     <h2>OUR IMPACT</h2>
-    <hr>
     <div class="FLEX">
       <div class="card">
         <h4><b>Lorem.</b></h4>
-        <hr>
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
       <div class="card">
         <h4><b>Lorem.</b></h4>
-        <hr>
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
       <div class="card">
         <h4><b>Lorem.</b></h4>
-        <hr>
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
       <div class="card">
         <h4><b>Lorem.</b></h4>
-        <hr>
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
       <div class="card">
         <h4><b>Lorem.</b></h4>
-        <hr>
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
       <div class="card">
         <h4><b>Lorem.</b></h4>
-        <hr>
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
     </div>
   </SECTION>
   <section>
     <h2>OUR PARTNERS</h2>
-    <hr>
     <div class="FLEX">
-      <img alt="IMAGE" src="img\logo.png">
-      <img alt="IMAGE" src="img\logo.png">
-      <img alt="IMAGE" src="img\logo.png">
+      <img alt="IMAGE" src="images/">
+      <img alt="IMAGE" src="images/">
+      <img alt="IMAGE" src="images/">
     </div>
   </section>
   <section>
     <h2>JOIN US</h2>
-    <hr>
     <div class="FLEX">
-      <img alt="IMAGE" src="img/partner.PNG">
-      <img alt="IMAGE" src="img/career.PNG">
-      <img alt="IMAGE" src="img/inter.PNG">
+      <img alt="IMAGE" src="images//partner.PNG">
+      <img alt="IMAGE" src="images//career.PNG">
+      <img alt="IMAGE" src="images//inter.PNG">
     </div>
   </section>
   <footer>
@@ -262,6 +317,7 @@
 
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>

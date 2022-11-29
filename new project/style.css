@@ -1,0 +1,23 @@
+html{margin: 0;padding:0;border: 0;}
+Header{background-color: rgb(231, 238, 142);}
+ul{list-style: none;}    
+a{text-decoration: none;    text-align: center;
+    text-decoration: none;
+    color: rgb(240, 71, 20);
+    font-size: 1em;padding: 10px;}
+li{text-decoration: none; text-align: center;text-decoration: none;color: rgb(240, 71, 20);
+  font-size: 1.3em;}
+.FLEX{display: flex;justify-content: space-around; align-items: center;}
+.BG{background-color: rgb(42, 43, 42);}
+h2{color:rgb(230, 69, 69) ;}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 30%;
+    
+  }
+  .card:hover {
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2);
+    justify-content: space-between;
+  }
