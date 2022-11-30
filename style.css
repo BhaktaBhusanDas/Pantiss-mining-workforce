@@ -11,6 +11,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: black;
   font-family: 'Roboto', sans-serif;
@@ -25,6 +29,7 @@ header {
   height: 108px;
   top: 0px;
   z-index: 10;
+  box-shadow: 0px 5px 12px black;
 }
 
 nav {
@@ -45,11 +50,6 @@ nav {
   font-size: 12px;
   list-style: none;
 }
-
-/* .navUl li {
-  padding: 41px 15px 40px 15px;
-  transition: .5s;
-} */
 
 .navUl li a {
   padding: 42px 10px 42px 10px;
@@ -193,12 +193,12 @@ h2 {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 16px 14px 16px black;
-  transition: .5s;
+  transition: .2s;
 }
 
 .card:hover {
   box-shadow: none;
-  scale: .98;
+  scale: .99;
 }
 
 .cardImageContainer {
@@ -209,6 +209,7 @@ h2 {
 .cardImageContainer h3 {
   padding-top: 260px;
   font-weight: 100;
+  font-size: 18px;
 }
 
 .card1 {
@@ -282,5 +283,214 @@ h2 {
   letter-spacing: 5px;
   margin-top: 100px;
   margin-bottom: 100px;
+  text-align: center;
+}
+
+.ourReach {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.ourReach img {
+  margin-top: 23px;
+}
+
+.ourTrainingCenter {
+  /* border: 2px solid black; */
+  margin-top: 60px;
+  text-align: center;
+}
+
+.trainingCardContainer {
+  /* border: 2px solid blue; */
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.trainingCard {
+  width: 36vw;
+  max-width: 600px;
+  min-width: 400px;
+  height: 230px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.trainingCard p {
+  margin-top: 9px;
+}
+
+.digitalSection {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.trainingCard {
+  margin-top: 20px;
+}
+
+.ourHighlights {
+  /* border: 2px solid blue; */
+  margin-top: 80px;
+  text-align: center;
+}
+
+.bigCardContainer {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.smallCardContainer {
+  /* border: 2px solid orange; */
+  width: fit-content;
+}
+
+.highlightsCard {
+  width: 300px;
+  height: 405px;
+  box-shadow: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.highlightsCard:hover {
+  scale: 1;
+}
+
+.smallCardContainer h3 {
+  text-transform: capitalize;
+  font-size: 25px;
+}
+
+.highlightsImageContainer {
+  /* border: 2px solid red; */
+  height: 50%;
+  transition: .5s;
+  overflow: hidden;
+}
+
+.highlightsImage1 {
+  background: url(images/ourHighlights/success.avif);
+  background-position: center;
+  background-size: 100%;
+}
+
+.highlightsImage2 {
+  background: url(images/ourHighlights/2.avif);
+  background-position: center;
+  background-size: 100%;
+}
+
+.highlightsImage3 {
+  background: url(images/ourHighlights/3.avif);
+  background-position: center;
+  background-size: 100%;
+}
+
+.highlightsImage4 {
+  background: url(images/ourHighlights/4.avif);
+  background-position: center;
+  background-size: 120%;
+}
+
+.highlightsImageContainer:hover {
+  background-size: 110%;
+}
+
+.highlightsImage4:hover {
+  background-size: 130%;
+}
+
+.smallCardContainer h4 {
+  margin-top: 20px;
+  text-align: left;
+  padding-left: 10px;
+  font-size: 23px;
+}
+
+.smallCardContainer p {
+  margin-top: 40px;
+  text-align: left;
+  padding-left: 10px;
+}
+
+button {
+  /* border: 1px solid black; */
+  width: 100%;
+  margin-top: 30px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 19px;
+  letter-spacing: 1px;
+  background: #00a6a8;
+  color: white;
+  border: none;
+  transition: .5s;
+}
+
+button:hover {
+  background: black;
+}
+
+.ourImpact {
+  /* border: 2px solid black; */
+  text-align: center;
+  max-width: 1500px;
+  margin: auto;
+  margin-top: 80px;
+}
+
+.impactCardContainer {
+  /* border: 2px solid blue; */
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 27px;
+}
+
+.impactCard {
+  width: 200px;
+  height: 170px;
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: none;
+}
+
+.impactCard span {
+  text-shadow: none;
+  font-size: 80px;
+}
+
+.impactCard h4 {
+  font-size: 30px;
+}
+
+.impactCard:hover {
+  scale: 1;
+}
+
+.ourPartners {
+  border: 2px solid black;
+  margin-top: 80px;
   text-align: center;
 }
