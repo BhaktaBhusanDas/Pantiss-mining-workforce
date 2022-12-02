@@ -5,10 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,700,1,200" />
   <title>Pantiss mining workforce</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -16,12 +20,12 @@
     <nav>
       <a class="logo" href="#"><img alt="IMAGE" src="images/logo.png"></a>
       <ul class="navUl">
-        <li><a class="active" href="#">Home</a></li>
-        <li><a href="#">Who we are</a></li>
-        <li><a href="#">What we do</a></li>
-        <li><a href="#">Mining empowerment</a></li>
-        <li><a href="#">Our publications</a></li>
-        <li><a href="#">Career</a></li>
+        <a class="active" href="#">Home</a>
+        <a href="html/about.html">Who we are </a>
+        <a href="#">What we do</a>
+        <a href="#">Mining empowerment</a>
+        <a href="#">Our publications</a>
+        <a href="#">Career</a>
       </ul>
     </nav>
   </header>
@@ -38,8 +42,23 @@
           </span></button>
       </div>
       <div class="slideContainer">
-        <div class="slide image1"></div>
-        <div class="slide image2"></div>
+        <div class="slide image1">
+          <div class="text">
+            <h2>Pantiss Employability Training Services</h2>
+            <p>Shaping Lives, Empowering communities </p>
+          </div>
+        </div>
+        <div class="slide image2">
+          <div class="text">
+            <h2>Sewing Machine Operator </h2>
+            <p>A 3 month residential course providing employment assurance to youth with little no educational
+              qualification in the garment export industry across Bangalore, Chennai & Tirupur. Typically made free of
+              cost for the trainees through govt. schemes like Aajeevika, OSEMS, OSFDC etc., Pantiss trains & places
+              over 2,000 operators per annum and employs them with companies like Shahi Exports, Raymond, Texport,
+              Aquarelle etc. </p>
+            <a href=""><button class="wideButton textButton">Know More</button></a>
+          </div>
+        </div>
         <div class="slide image3"></div>
         <div class="slide image4"></div>
         <div class="slide image5"></div>
@@ -182,29 +201,29 @@
     </section>
     <section class="ourReach">
       <h2>OUR REACH</h2>
-      <img src="images/map.jpg" alt="MAP">
+      <div class="map" id="visualization"> </div>
     </section>
     <section class="ourTrainingCenter">
       <h2>OUR TRAINING CENTER</h2>
       <div class="trainingCardContainer">
         <a href="#">
           <div class="card trainingCard">
-            <img src="images/trainingLogos/1.png" alt="Unable to load image">
+            <img src="../images/trainingLogos/1.png" alt="Unable to load image">
             <p>Find a PMKVY<br>Training Center</p>
           </div>
         </a>
         <a href="#">
           <div class="card trainingCard digitalCard">
-            <img src="images/trainingLogos/2.png" alt="Unable to load image">
+            <img src="../images/trainingLogos/2.png" alt="Unable to load image">
             <p>Find a PMKK<br>Center</p>
           </div>
         </a>
       </div>
-      <div class="digitalSection">
+      <div class="digitalDiv">
         <h2>OUR DIGITAL LEARNING</h3>
           <a href="">
             <div class="card trainingCard">
-              <img src="images/trainingLogos/1.png" alt="Unable to load image">
+              <img src="../images/trainingLogos/1.png" alt="Unable to load image">
               <p>Lorem ipsum dolor<br>sit amet</p>
             </div>
           </a>
@@ -407,7 +426,8 @@
         </ul>
       </div>
   </footer>
-  <script src="script.js"></script>
+  <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+  <script src="../script/script.js"></script>
   <script src="https://kit.fontawesome.com/3325654ed2.js" crossorigin="anonymous"></script>
 </body>
 

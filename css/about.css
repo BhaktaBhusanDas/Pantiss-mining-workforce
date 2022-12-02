@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'Kusanagi';
+    src: url(../fonts/Webfont/Kusanagi.woff);
+}
+
+/* slider images start */
+
+.image1 {
+    background: url(../images/aboutSlider/1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.image2 {
+    background: url(../images/aboutSlider/2.PNG);
+    background-position: center;
+    background-size: cover;
+}
+
+.image3 {
+    background: url(../images/aboutSlider/3.PNG);
+    background-position: center;
+    background-size: cover;
+}
+
+.image4 {
+    background: url(../images/aboutSlider/4.PNG);
+    background-position: center;
+    background-size: cover;
+}
+
+.image5 {
+    background: url(../images/slider/5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.image6 {
+    background: url(../images/slider/6.png);
+    background-position: center;
+    background-size: cover;
+}
+
+/* slider images end */
+
+.mvg {
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    row-gap: 30px;
+}
+
+.card {
+    border-radius: 0;
+    width: 300px;
+    height: 400px;
+    box-shadow: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card:hover {
+    scale: 1;
+}
+
+.card h3 {
+    text-align: center;
+    font-size: 28px;
+    text-transform: capitalize;
+    margin: 10px 0px 30px;
+}
+
+.card p {
+    /* border: 2px solid red; */
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: .5px;
+    padding: 0px 11px;
+    height: 250px;
+    text-align: left;
+}
+
+.card i {
+    font-size: 70px;
+    padding-bottom: 10px;
+}
+
+.ourTeam {
+    border: 2px solid black;
+}
+
+.ourTeam h2 {
+    text-transform: capitalize;
+}
+
+h1 {
+    font-family: 'Kusanagi';
+    text-align: center;
+    margin-top: 60px;
+}
