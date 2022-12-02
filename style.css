@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: 'KUSANAGI';
-  src: url(fonts/Webfont/Kusanagi.woff);
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
 html {
@@ -37,10 +32,6 @@ nav {
   display: flex;
   gap: 30px;
   height: 100%;
-}
-
-.logo {
-  /* border: 2px solid red; */
 }
 
 .navUl {
@@ -278,14 +269,6 @@ h2 {
   padding: 0px 10px 0px 10px;
 }
 
-.to {
-  font-family: 'KUSANAGI';
-  letter-spacing: 5px;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  text-align: center;
-}
-
 .ourReach {
   margin-top: 60px;
   text-align: center;
@@ -307,12 +290,13 @@ h2 {
   justify-content: center;
   gap: 40px;
   margin-top: 20px;
+  flex-wrap: wrap;
 }
 
 .trainingCard {
   width: 36vw;
   max-width: 600px;
-  min-width: 400px;
+  min-width: 325px;
   height: 230px;
   border-radius: 4px;
   display: flex;
@@ -428,6 +412,17 @@ h2 {
 }
 
 button {
+  background: transparent;
+  border: none;
+  color: white;
+  transition: .1s;
+}
+
+button:active {
+  scale: .8;
+}
+
+.wideButton {
   /* border: 1px solid black; */
   width: 100%;
   margin-top: 30px;
@@ -442,7 +437,7 @@ button {
   transition: .5s;
 }
 
-button:hover {
+.wideButton:hover {
   background: black;
 }
 
@@ -490,7 +485,199 @@ button:hover {
 }
 
 .ourPartners {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   margin-top: 80px;
   text-align: center;
+}
+
+.partnerSlider {
+  /* border: 2px solid red; */
+  width: 100%;
+  width: 70vw;
+  max-width: 950px;
+  height: 400px;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  justify-content: flex-start;
+}
+
+.partnerSlideContainer {
+  /* border: 2px solid blue; */
+  height: 400px;
+  transition: .5s cubic-bezier(0, 0, 0, 1);
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.partnerSlide {
+  /* border: 2px solid orange; */
+  background: transparent;
+  width: 200px;
+  height: 50%;
+  border-radius: 7px;
+}
+
+.partnerimage1 {
+  background: url(images/ourPartners/1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.partnerimage2 {
+  background: url(images/ourPartners/2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.partnerimage3 {
+  background: url(images/ourPartners/3.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.partnerimage4 {
+  background: url(images/ourPartners/4.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.partnerimage5 {
+  background: url(images/ourPartners/5.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.partnerimage6 {
+  background: url(images/ourPartners/6.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.partnerimage7 {
+  background: url(images/ourPartners/7.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.partnerimage8 {
+  background: url(images/ourPartners/8.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.partnerimage9 {
+  background: url(images/ourPartners/9.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.partnerimage10 {
+  background: url(images/ourPartners/10.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.joinUs {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.joinUsContainer {
+  /* border: 2px solid black; */
+  margin-top: 55px;
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  row-gap: 40px;
+  flex-wrap: wrap;
+}
+
+.joinCard {
+  /* border: 2px solid red; */
+  width: 200px;
+}
+
+.joinCard span {
+  text-shadow: none;
+}
+
+.joinCard h5 {
+  margin-top: 10px;
+}
+
+footer {
+  background: #e2e4e5;
+  padding-bottom: 20px;
+}
+
+.footerBox {
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.linkContaner {
+  /* border: 2px solid black; */
+  width: 243px;
+  padding-top: 5px;
+}
+
+.linkH {
+  margin-top: 30px;
+  font-size: 28px;
+  text-transform: capitalize;
+  color: tomato;
+}
+
+.linkUl {
+  /* border: 2px solid blue; */
+  margin-top: 10px;
+  list-style: none;
+  font-size: 13px;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.linkUl li {
+  text-align: left;
+  color: black;
+}
+
+.contact {
+  /* border: 2px solid blue; */
+  width: 250px;
+  font-size: 26px;
+  letter-spacing: .5px;
+  font-weight: bold;
+}
+
+.contactUl {
+  gap: 30px;
+}
+
+.contact a {
+  font-size: 19px;
+}
+
+.socialMedia {
+  /* border: 2px solid springgreen; */
+  width: 243px;
+}
+
+.socialMedia ul {
+  /* border: 2px solid springgreen; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  height: 100%;
+  list-style: none;
+  font-size: 17px;
 }
