@@ -32,3 +32,21 @@ document.body.onload = () => {
     }, mainSliderinterval);
 }
 /* main slider end */
+
+/* team box start */
+let buttons = document.getElementsByClassName(`teamButoon`)
+let teams = document.getElementsByClassName(`box`)
+
+for (let index = 0; index < buttons.length; index++) {
+    const element = buttons[index];
+    element.onclick = () => {
+        for (let index = 0; index < buttons.length; index++) {
+            const element = buttons[index];
+            element.classList.remove(`activeButton`)
+            teams[index].classList.remove(`boxActive`)
+        }
+        element.classList.add(`activeButton`)
+        teams[index].classList.add(`boxActive`)
+    }
+}
+/* team box end */

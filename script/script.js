@@ -111,3 +111,20 @@ function drawVisualization() {
     geochart.draw(data, opts);
 }
 /* map end */
+
+/* notice slider start */
+let noticeSlideContainer = document.querySelector(`.noticeSlideContainer`)
+let noticeValue = 0
+let noticeSliderinterval = 5000
+setInterval(() => {
+    noticeValue -= 70
+    if (noticeValue < -350) {
+        noticeValue = 0
+        noticeSlideContainer.style.transition = "none"
+    }
+    noticeSlideContainer.style.marginTop = `${noticeValue}px`
+    if (noticeValue == -70) {
+        noticeSlideContainer.style.transition = ".5s cubic-bezier(0, 0, 0, 1)"
+    }
+}, noticeSliderinterval);
+/* notice slider end */

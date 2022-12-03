@@ -70,7 +70,7 @@
 
 .card h3 {
     text-align: center;
-    font-size: 28px;
+    font-size: 27px;
     text-transform: capitalize;
     margin: 10px 0px 30px;
 }
@@ -91,7 +91,7 @@
 }
 
 .ourTeam {
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 .ourTeam h2 {
@@ -102,4 +102,52 @@ h1 {
     font-family: 'Kusanagi';
     text-align: center;
     margin-top: 60px;
+}
+
+.teamButtonContainer {
+    /* border: 2px solid red; */
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    margin: 25px 0px;
+}
+
+.teamButoon {
+    width: 300px;
+    margin-top: 10px;
+}
+
+.activeButton {
+    background: black;
+}
+
+.boxContainer {
+    /* border: 2px solid red; */
+}
+
+.box {
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    display: none;
+}
+
+.teamImage {
+    /* border: 2px solid orange; */
+    width: 100%;
+    height: 70%;
+    background: url(../images/team/teamOdisha/1.jpg);
+    background-position: center;
+    background-size: 125%;
+}
+
+.boxActive {
+    display: flex;
+}
+
+.ourAdvisoryBoard {
+    border: 2px solid red;
 }

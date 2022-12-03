@@ -44,8 +44,10 @@ nav {
 
 .navUl a {
   padding: 42px 10px 42px 10px;
-  transition: .5s;
-  font-size: 20px;
+  transition: .5s cubic-bezier(0, 0, 0, 1);
+  font-size: 17px;
+  border-right: 1px solid #acacac;
+  letter-spacing: .5px;
 }
 
 .navUl a:hover {
@@ -211,7 +213,7 @@ section {
 .ourWork h2,
 h2 {
   color: black;
-  font-size: 43px;
+  font-size: 42px;
 }
 
 .cardContainer {
@@ -316,6 +318,10 @@ h2 {
 
 .ourReach {
   background: black;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .ourReach h2 {
@@ -328,6 +334,72 @@ h2 {
   padding: 23px 0px;
   width: fit-content;
   margin: auto;
+}
+
+.mapDiv {
+  /* border: 2px solid white; */
+  width: 50%;
+  min-width: 545px;
+}
+
+.notice {
+  /* border: 2px solid red; */
+  width: 50%;
+  min-width: 545px;
+}
+
+.noticeSlider {
+  /* border: 2px solid rgb(247, 0, 255); */
+  width: 50% !important;
+  justify-content: flex-start !important;
+  min-width: 437px !important;
+  margin-top: 27px !important;
+  height: 350px !important;
+}
+
+.noticeSlideContainer {
+  flex-direction: column !important;
+  gap: 10px !important;
+  height: fit-content !important;
+  width: 100% !important;
+  transition: .5s cubic-bezier(0, 0, 0, 1);
+}
+
+.noticeSlide {
+  /* border: 2px solid white; */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  /* background: springgreen !important; */
+  width: 100% !important;
+  height: 70px !important;
+  border-radius: 0 !important;
+  display: flex;
+  /* align-items: center; */
+}
+
+.calender {
+  border: 1px solid #43f6db;
+  width: 60px;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #43f6db;
+  margin-top: 2px;
+}
+
+.update {
+  /* border: 2px solid springgreen; */
+  width: calc(100% - 60px);
+  color: white;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  padding-left: 13px;
+}
+
+.update a {
+  color: white;
+  font-size: 15px;
+  letter-spacing: .6px;
 }
 
 .ourTrainingCenter {
@@ -468,7 +540,7 @@ button {
 }
 
 button:active {
-  scale: .8;
+  scale: .9;
 }
 
 .wideButton {
@@ -483,7 +555,7 @@ button:active {
   background: #00a6a8;
   color: white;
   border: none;
-  transition: .5s;
+  transition: .4s;
 }
 
 .wideButton:hover {
