@@ -6,37 +6,37 @@
 /* slider images start */
 
 .image1 {
-    background: url(../images/aboutSlider/1.jpg);
+    background: url(../images/aboutSlider/1.avif);
     background-position: center;
     background-size: cover;
 }
 
 .image2 {
-    background: url(../images/aboutSlider/2.PNG);
+    background: url(../images/aboutSlider/2.avif);
     background-position: center;
     background-size: cover;
 }
 
 .image3 {
-    background: url(../images/aboutSlider/3.PNG);
+    background: url(../images/aboutSlider/3.avif);
     background-position: center;
     background-size: cover;
 }
 
 .image4 {
-    background: url(../images/aboutSlider/4.PNG);
+    background: url(../images/aboutSlider/4.avif);
     background-position: center;
     background-size: cover;
 }
 
 .image5 {
-    background: url(../images/slider/5.jpg);
+    background: url(../images/slider/5.avif);
     background-position: center;
     background-size: cover;
 }
 
 .image6 {
-    background: url(../images/slider/6.png);
+    background: url(../images/slider/6.avif);
     background-position: center;
     background-size: cover;
 }
@@ -125,29 +125,17 @@ h1 {
     /* border: 2px solid red; */
 }
 
-.box {
-    /* border: 2px solid blue; */
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 30px;
-    flex-wrap: wrap;
-    display: none;
-}
-
+/* team image start */
 .teamImage {
     /* border: 2px solid orange; */
     width: 100%;
     height: 70%;
-    background: url(../images/team/teamOdisha/1.jpg);
+    background: url(../images/team/teamOdisha/1.avif);
     background-position: center;
     background-size: 125%;
 }
 
+/* team image end */
 .boxActive {
     display: flex;
-}
-
-.ourAdvisoryBoard {
-    border: 2px solid red;
 }

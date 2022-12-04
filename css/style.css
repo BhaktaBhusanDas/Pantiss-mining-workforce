@@ -156,25 +156,25 @@ li {
 }
 
 .image3 {
-  background: url(../images/slider/3.jfif);
+  background: url(../images/slider/3.avif);
   background-position: center;
   background-size: cover;
 }
 
 .image4 {
-  background: url(../images/slider/4.jfif);
+  background: url(../images/slider/4.avif);
   background-position: center;
   background-size: cover;
 }
 
 .image5 {
-  background: url(../images/slider/5.jpg);
+  background: url(../images/slider/5.avif);
   background-position: center;
   background-size: cover;
 }
 
 .image6 {
-  background: url(../images/slider/6.png);
+  background: url(../images/slider/6.avif);
   background-position: center;
   background-size: cover;
 }
@@ -218,10 +218,11 @@ h2 {
 
 .cardContainer {
   /* border: 2px solid red; */
-  max-width: 1200px;
   margin: auto;
   margin-top: 23px;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
   row-gap: 49px;
 }
 
@@ -248,73 +249,72 @@ h2 {
 
 .cardImageContainer h3 {
   padding-top: 260px;
-  font-weight: 100;
   font-size: 18px;
+  letter-spacing: .5px;
 }
 
+/* our works images start */
 .card1 {
-  background: url(../images/ourWorks/social\ development.avif);
+  background: url(../images/ourWorks/1.avif);
   background-size: cover;
   background-position: center;
 }
 
 .card2 {
-  background: url(../images/ourWorks/socialEnterprises.avif);
+  background: url(../images/ourWorks/2.avif);
   background-size: cover;
   background-position: center;
 }
 
 .card3 {
-  background: url(../images/ourWorks/socialEnterprises.avif);
+  background: url(../images/ourWorks/3.avif);
   background-size: cover;
   background-position: center;
 }
 
 .card4 {
-  background: url(../images/ourWorks/socialEnterprises.avif);
+  background: url(../images/ourWorks/4.avif);
   background-size: cover;
   background-position: center;
 }
 
-.ourProjects {
-  /* border: 2px solid blue; */
+.card5 {
+  background: url(../images/ourWorks/4.avif);
+  background-size: cover;
+  background-position: center;
 }
 
-.projectCardContainer {
+/* our works images end */
+
+.ourAdvisoryBoard {
+  /* border: 2px solid red; */
+}
+
+.ourAdvisoryBoard h3 {
+  font-size: 20px;
+  margin: 5px 0px 23px;
+}
+
+.box {
   /* border: 2px solid blue; */
-  max-width: 1200px;
-  margin: auto;
-  margin-top: 23px;
   display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
   flex-wrap: wrap;
-  justify-content: space-around;
-  row-gap: 32px;
 }
 
-.projectCard {
-  height: 200px;
-  border-radius: 8px;
+/* team image start */
+.teamImage {
+  /* border: 2px solid orange; */
+  width: 100%;
+  height: 70%;
+  background: url(../images/team/teamOdisha/1.avif);
+  background-position: center;
+  background-size: 125%;
 }
 
-.hContainer {
-  /* border: 2px solid blue; */
-  height: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 25px;
-  background: white;
-  text-transform: capitalize;
-}
-
-.pContainer {
-  /* border: 2px solid blue; */
-  height: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0px 10px 0px 10px;
-}
+/* team image end */
 
 .ourReach {
   background: black;
@@ -355,6 +355,19 @@ h2 {
   min-width: 437px !important;
   margin-top: 27px !important;
   height: 350px !important;
+  position: relative;
+}
+
+.noticeButtonContainer {
+  /* border: 2px solid white; */
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  right: 0px;
+  top: 0px;
+  height: 100%;
+  margin-top: 0px;
+  padding: 0px;
 }
 
 .noticeSlideContainer {
@@ -598,6 +611,7 @@ button:active {
 
 .impactCard h4 {
   font-size: 30px;
+  font-weight: bold;
 }
 
 .impactCard:hover {
@@ -640,61 +654,61 @@ button:active {
 }
 
 .partnerimage1 {
-  background: url(../images/ourPartners/1.jpg);
+  background: url(../images/ourPartners/1.avif);
   background-position: center;
   background-size: cover;
 }
 
 .partnerimage2 {
-  background: url(../images/ourPartners/2.jpg);
+  background: url(../images/ourPartners/2.avif);
   background-position: center;
   background-size: cover;
 }
 
 .partnerimage3 {
-  background: url(../images/ourPartners/3.jpg);
+  background: url(../images/ourPartners/3.avif);
   background-position: center;
   background-size: cover;
 }
 
 .partnerimage4 {
-  background: url(../images/ourPartners/4.jpg);
+  background: url(../images/ourPartners/4.avif);
   background-position: center;
   background-size: cover;
 }
 
 .partnerimage5 {
-  background: url(../images/ourPartners/5.jpg);
+  background: url(../images/ourPartners/5.avif);
   background-position: center;
   background-size: cover;
 }
 
 .partnerimage6 {
-  background: url(../images/ourPartners/6.jpg);
+  background: url(../images/ourPartners/6.avif);
   background-position: center;
   background-size: cover;
 }
 
 .partnerimage7 {
-  background: url(../images/ourPartners/7.jpg);
+  background: url(../images/ourPartners/7.avif);
   background-position: center;
   background-size: cover;
 }
 
 .partnerimage8 {
-  background: url(../images/ourPartners/8.jpg);
+  background: url(../images/ourPartners/8.avif);
   background-position: center;
   background-size: cover;
 }
 
 .partnerimage9 {
-  background: url(../images/ourPartners/9.jpg);
+  background: url(../images/ourPartners/9.avif);
   background-position: center;
   background-size: cover;
 }
 
 .partnerimage10 {
-  background: url(../images/ourPartners/10.jpg);
+  background: url(../images/ourPartners/10.avif);
   background-position: center;
   background-size: cover;
 }
@@ -724,6 +738,103 @@ button:active {
 
 .joinCard h5 {
   margin-top: 10px;
+}
+
+.linkSlider {
+  height: 180px;
+  width: 83vw;
+  max-width: 1346px;
+  justify-content: center;
+}
+
+.linkButtonContainer {
+  /* border: 2px solid red; */
+  width: 95vw;
+  max-width: 1461px;
+  margin-top: 40px;
+}
+
+.containerBox {
+  /* border: 2px solid orange; */
+  overflow: hidden;
+  z-index: 9;
+}
+
+.linkSliderContainer {
+  height: 180px;
+}
+
+.linkSliderContainer a {
+  /* border: 2px solid; */
+  cursor: pointer;
+  width: 100%;
+  height: 50%;
+}
+
+.linkSlide {
+  height: 100%;
+  overflow: hidden;
+  width: 234px;
+}
+
+.linkImage1 {
+  background: url(../images/quickLinks/1.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.linkImage2 {
+  background: url(../images/quickLinks/2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.linkImage3 {
+  background: url(../images/quickLinks/3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.linkImage4 {
+  background: url(../images/quickLinks/4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.linkImage5 {
+  background: url(../images/quickLinks/5.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.linkImage6 {
+  background: url(../images/quickLinks/6.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.linkImage7 {
+  background: url(../images/quickLinks/7.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.linkImage8 {
+  background: url(../images/quickLinks/8.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.linkImage9 {
+  background: url(../images/quickLinks/9.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.linkImage10 {
+  background: url(../images/quickLinks/10.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 footer {
