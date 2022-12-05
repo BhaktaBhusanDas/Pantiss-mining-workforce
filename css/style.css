@@ -19,8 +19,7 @@ header {
   /* border: 2px solid black; */
   position: fixed;
   background: white;
-  width: 100%;
-  overflow: hidden;
+  width: 100vw;
   height: 108px;
   top: 0px;
   z-index: 10;
@@ -32,6 +31,7 @@ nav {
   display: flex;
   gap: 30px;
   height: 100%;
+  overflow: hidden;
 }
 
 .navUl {
@@ -43,14 +43,56 @@ nav {
 }
 
 .navUl a {
-  padding: 42px 10px 42px 10px;
+  padding: 44px 10px;
   transition: .5s cubic-bezier(0, 0, 0, 1);
   font-size: 17px;
   border-right: 1px solid #acacac;
   letter-spacing: .5px;
 }
 
-.navUl a:hover {
+.navUl a span {
+  font-size: 15px;
+  color: #565656;
+}
+
+.extendedUl {
+  position: absolute;
+  border: 1px solid #acacac;
+  transform: translateY(60px);
+  z-index: 10;
+  flex-direction: column;
+  align-items: flex-start;
+  background: white;
+  width: 135px;
+  top: 48px;
+  left: 343px;
+  display: flex;
+  display: none;
+  transition: none;
+}
+
+.whatWeDoExtension {
+  width: fit-content;
+  left: 477px;
+}
+
+.extendedUl a {
+  border: none;
+  /* border: 2px solid red; */
+  width: 100%;
+  padding: 15px 5px 15px 10px;
+  transition: .5s cubic-bezier(0, 0, 0, 1);
+  text-align: left;
+  font-size: 18px;
+  letter-spacing: .3px;
+}
+
+.extensionActive {
+  display: flex;
+}
+
+.navUl a:hover,
+.extendedUl a:hover {
   background: #e2e4e5;
 }
 
@@ -213,7 +255,7 @@ section {
 .ourWork h2,
 h2 {
   color: black;
-  font-size: 42px;
+  font-size: 41px;
 }
 
 .cardContainer {
@@ -288,6 +330,8 @@ h2 {
 
 .ourAdvisoryBoard {
   /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-around;
 }
 
 .ourAdvisoryBoard h3 {
@@ -316,36 +360,14 @@ h2 {
 
 /* team image end */
 
-.ourReach {
-  background: black;
-  color: white;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.ourReach h2 {
-  color: white;
-  padding-top: 23px;
-}
-
-.map {
-  /* border: 2px solid red; */
-  padding: 23px 0px;
-  width: fit-content;
-  margin: auto;
-}
-
-.mapDiv {
-  /* border: 2px solid white; */
-  width: 50%;
-  min-width: 545px;
+iframe {
+  width: -webkit-fill-available;
 }
 
 .notice {
   /* border: 2px solid red; */
-  width: 50%;
-  min-width: 545px;
+  /* width: 50%;
+  min-width: 545px; */
 }
 
 .noticeSlider {
@@ -380,7 +402,7 @@ h2 {
 
 .noticeSlide {
   /* border: 2px solid white; */
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
   /* background: springgreen !important; */
   width: 100% !important;
   height: 70px !important;
@@ -390,33 +412,34 @@ h2 {
 }
 
 .calender {
-  border: 1px solid #43f6db;
+  border: 1px solid #008ad2;
   width: 60px;
   height: 90%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  color: #43f6db;
+  color: #008ad2;
   margin-top: 2px;
 }
 
 .update {
   /* border: 2px solid springgreen; */
   width: calc(100% - 60px);
-  color: white;
   text-align: left;
   font-family: 'Roboto', sans-serif;
   padding-left: 13px;
 }
 
 .update a {
-  color: white;
-  font-size: 15px;
+  color: black;
+  font-size: 14px;
   letter-spacing: .6px;
+  font-weight: 600;
 }
 
 .ourTrainingCenter {
   /* border: 2px solid black; */
+  margin-top: 0px;
 }
 
 .trainingCardContainer {
@@ -714,6 +737,7 @@ button:active {
 }
 
 .joinUs {
+  margin-top: 0px;
   margin-bottom: 20px;
 }
 

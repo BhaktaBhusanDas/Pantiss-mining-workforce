@@ -1,3 +1,47 @@
+// whoWeAre extension start
+let whoWeAre = document.querySelector(`.whoWeAre`)
+let whoWeAreExtension = document.querySelector(`.whoWeAreExtension`)
+
+whoWeAre.onmouseover = () => {
+    whoWeAreExtension.classList.add(`extensionActive`)
+}
+
+whoWeAre.onmouseleave = () => {
+    whoWeAreExtension.classList.remove(`extensionActive`)
+}
+
+whoWeAreExtension.onmouseover = () => {
+    whoWeAreExtension.classList.add(`extensionActive`)
+}
+
+whoWeAreExtension.onmouseleave = () => {
+    whoWeAreExtension.classList.remove(`extensionActive`)
+}
+// whoWeAre extension end
+
+
+// whatWeDo extension start
+let whatWeDo = document.querySelector(`.whatWeDo`)
+let whatWeDoExtension = document.querySelector(`.whatWeDoExtension`)
+
+whatWeDo.onmouseover = () => {
+    whatWeDoExtension.classList.add(`extensionActive`)
+}
+
+whatWeDo.onmouseleave = () => {
+    whatWeDoExtension.classList.remove(`extensionActive`)
+}
+
+whatWeDoExtension.onmouseover = () => {
+    whatWeDoExtension.classList.add(`extensionActive`)
+}
+
+whatWeDoExtension.onmouseleave = () => {
+    whatWeDoExtension.classList.remove(`extensionActive`)
+}
+// whatWeDo extension end
+
+
 /* main slider start */
 let slideContainer = document.querySelector(`.slideContainer`)
 let value = 0

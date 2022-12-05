@@ -136,6 +136,32 @@ h1 {
 }
 
 /* team image end */
+.box {
+    display: none;
+}
+
 .boxActive {
     display: flex;
+}
+
+.cardContainer {
+    display: flex;
+}
+
+.ourWellWisher h3 {
+    /* margin-top: 30px; */
+    margin: 0;
+    padding-top: 13px;
+}
+
+.ourWellWisher .teamImage {
+    height: 83%;
+}
+
+.joinUsContainer {
+    margin-top: 21px;
+}
+
+.joinUs {
+    margin-top: 50px;
 }
