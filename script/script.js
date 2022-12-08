@@ -80,6 +80,91 @@ document.body.onload = () => {
 // main slider end
 
 
+// our works slider start
+let workSlideContainer = document.querySelector(`.workSlideContainer`)
+workSlideContainer.style.transition = ".5s cubic-bezier(0, 0, 0, 1)"
+workSlideContainer.style.marginLeft = `0px`
+let workValue = 0
+let workSliderinterval = 3000
+let workSliderImages = 5
+let maxWorkSliderValue = (workSliderImages - 3) * (-300)
+
+
+let workLeft = document.getElementById(`workLeft`)
+let workRight = document.getElementById(`workRight`)
+
+
+workLeft.onclick = () => {
+    workValue += 300
+    if (workValue > 0) {
+        workValue = maxWorkSliderValue
+    }
+    workSlideContainer.style.marginLeft = `${workValue}px`
+}
+workRight.onclick = () => {
+    workValue -= 300
+    if (workValue < maxWorkSliderValue) {
+        workValue = 0
+    }
+    workSlideContainer.style.marginLeft = `${workValue}px`
+}
+console.log(workSlideContainer.style);
+setInterval(() => {
+    workValue -= 300
+    if (workValue < maxWorkSliderValue) {
+        workValue = 0
+        workSlideContainer.style.transition = "none"
+    }
+    workSlideContainer.style.marginLeft = `${workValue}px`
+    if (workValue == -300) {
+        workSlideContainer.style.transition = ".5s cubic-bezier(0, 0, 0, 1)"
+    }
+}, workSliderinterval);
+// our works slider end
+
+
+// our advisory board slider start
+let advisorySlideContainer = document.querySelector(`.advisorySlideContainer`)
+advisorySlideContainer.style.transition = ".5s cubic-bezier(0, 0, 0, 1)"
+advisorySlideContainer.style.marginLeft = `0px`
+let advisoryValue = 0
+let advisorySliderinterval = 3000
+let advisorySliderImages = 4
+let maxAdvisorySliderValue = (advisorySliderImages - 1) * (-300)
+
+
+let advisoryLeft = document.getElementById(`advisoryLeft`)
+let advisoryRight = document.getElementById(`advisoryRight`)
+
+
+advisoryLeft.onclick = () => {
+    advisoryValue += 300
+    if (advisoryValue > 0) {
+        advisoryValue = maxAdvisorySliderValue
+    }
+    advisorySlideContainer.style.marginLeft = `${advisoryValue}px`
+}
+advisoryRight.onclick = () => {
+    advisoryValue -= 300
+    if (advisoryValue < maxAdvisorySliderValue) {
+        advisoryValue = 0
+    }
+    advisorySlideContainer.style.marginLeft = `${advisoryValue}px`
+}
+setInterval(() => {
+    advisoryValue -= 300
+    if (advisoryValue < maxAdvisorySliderValue) {
+        advisoryValue = 0
+        advisorySlideContainer.style.transition = "none"
+    }
+    advisorySlideContainer.style.marginLeft = `${advisoryValue}px`
+    if (advisoryValue == -300) {
+        advisorySlideContainer.style.transition = ".5s cubic-bezier(0, 0, 0, 1)"
+    }
+}, advisorySliderinterval);
+// our advisory board slider end
+
+
 // our partners slider start
 let partnerSlideContainer = document.querySelector(`.partnerSlideContainer`)
 let partnerValue = 0
@@ -169,7 +254,6 @@ setInterval(() => {
     linkValue -= 274
     if (linkValue < maxLinkSliderValue) {
         linkValue = 0
-        console.log(linkValue);
         linkSliderContainer.style.transition = "none"
     }
     linkSliderContainer.style.marginLeft = `${linkValue}px`
